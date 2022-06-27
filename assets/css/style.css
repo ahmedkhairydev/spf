@@ -3164,7 +3164,7 @@ hr {
   }
 }
 .service-two .service-layer {
-  background-image: url(../images/products/clean&clear.jpg);
+  background-image: url(../images/products/floor-stand_2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3548,13 +3548,17 @@ hr {
   overflow: hidden;
   border-radius: 20px;
   position: relative;
+  height: 100%;
 }
 .single-portfolio .thumbnail {
   position: relative;
   display: block;
+  height: 100%;
 }
 .single-portfolio .thumbnail img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .single-portfolio .thumbnail::before {
   content: "";

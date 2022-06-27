@@ -167,10 +167,11 @@
     Portfolio Carousel Activation
   -----------------------------------*/
   var swiper = new Swiper(".portfolio-carousel", {
-    loop: true,
+    loop: false,
     slidesPerView: 3,
     spaceBetween: 20,
     pagination: false,
+    autoplay: true,
     navigation: {
       nextEl: '.portfolio-carousel-wrapper .swiper-btn-next',
       prevEl: '.portfolio-carousel-wrapper .swiper-btn-prev',
@@ -210,7 +211,7 @@
       <div class="col-sm-6 col-lg-4 mb-30 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".1s">
         <div class="service-two-single">
           <div class="service-two-single-head">
-            <img src="assets/images/services/${service}.svg" alt="icon" style="width: 75px; height: 75px">
+            <img src="assets/images/services/${service}.svg" loading="lazy" alt="icon" style="width: 75px; height: 75px">
             <h6 class="title text-capitalize">${service}</h6>
           </div>
         </div>
@@ -219,4 +220,58 @@
   });
 
   $('#services').append(servicesHTML);
+
+  /*---------------------------
+    Portfolio
+  -----------------------------------*/
+  const portfolioImages = [
+    {
+      imageName: 'gate_1.jpg',
+      serviceCat: 'gate',
+      type: 'odd'
+    },
+    {
+      imageName: 'dangler_1.png',
+      serviceCat: 'dangler',
+      type: 'odd'
+    },
+    {
+      imageName: 'campain_1.jpg',
+      serviceCat: 'campain',
+      type: 'odd'
+    },
+    {
+      imageName: 'floor-display_8.jpg',
+      serviceCat: 'floor-display',
+      type: 'odd'
+    },
+    {
+      imageName: 'gate_4.jpg',
+      serviceCat: 'gate',
+      type: 'odd'
+    },
+    {
+      imageName: 'booth_1.png',
+      serviceCat: 'booth',
+      type: 'odd'
+    },
+  ];
+  let portfolioHTML = '';
+
+  portfolioImages.forEach(portfolioImage => {
+    portfolioHTML += `
+      <div class="swiper-slide custom-height">
+        <div class="single-portfolio-carousel single-portfolio">
+          <a class="thumbnail" href="portfolio.html#portfolioWrapper">
+            <img src="assets/images/products/${portfolioImage.imageName}" loading="lazy" alt="Portfolio Image">
+          </a>
+          <div class="content">
+            <span class="subtitle text-capitalize">${portfolioImage.serviceCat.split('-').join(' ')}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  $('#portfolioSwiper').append(portfolioHTML);
 })(jQuery);

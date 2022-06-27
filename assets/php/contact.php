@@ -24,10 +24,10 @@ header("Access-Control-Allow-Origin: *");
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "ahmedkhairydev@gmail.com";
+        $recipient = "info@spf-eg.com";
 
         // Set the email subject.
-        $subject = "Egens - Mail From $first_name";
+        $subject = "Hello - Mail From $first_name";
 
         // Build the email content.
         $email_content = "Name: $first_name\n";

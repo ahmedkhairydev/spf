@@ -1,36 +1,33 @@
 (function ($) {
-    "use strict";
-  
-/*---------------------------
-  Testimonial Two Activation
------------------------------------*/
-var swiper = new Swiper(".testimonialtwo", {
-    slidesPerView: 3,
-    loop:true,
-    pagination: false,
-    allowTouchMove: true,
-    navigation: false,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints:{
-      0: {
-        slidesPerView: 1
-      },
-      480: {
-        slidesPerView: 1
-      },
-      768: {
-        slidesPerView: 2
-      },
-      992: {
-        slidesPerView: 2
-      },
-      1200: {
-        slidesPerView: 3
-      }
-    }
-});
-  
+  "use strict";
+
+  /*---------------------------
+    Services
+  -----------------------------------*/
+  const services = ['booth', 'campaign', 'category', 'counter-top', 'floor-display', 'floor-stand', 'gandolla', 'gate', 'giveaways', 'magazine', 'pillar', 'printings', 'shelf'];
+  let servicesHTML = '';
+
+
+  services.forEach((service, index) => {
+    servicesHTML += `
+      <div class="col mb-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".${index + 1}s">
+        <!-- Single Service Start -->
+        <a href="portfolio.html#portfolioWrapper">
+          <div class="single-service">
+            <div class="single-service-top">
+              <div class="icon">
+                  <img src="assets/images/services/${service}.svg" loading="lazy" alt="icon" width="72" height="72">
+              </div>
+              <h4 class="title text-capitalize">${service.split('-').join(' ')}</h4>
+            </div>
+            <!-- <p class="single-service-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="readmore-btn" href="service-details.html"><i class="fas fa-angle-right"></i> Read More</a> -->
+          </div>
+        </a>
+        <!-- Single Service End -->
+      </div>
+    `;
+  });
+
+  $('#services').append(servicesHTML);
 })(jQuery);

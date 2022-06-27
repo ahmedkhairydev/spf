@@ -21,11 +21,47 @@
         <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
         <link rel="stylesheet" href="assets/css/plugins/odometer-theme-default.min.css">
-        <link rel="stylesheet" href="assets/css/plugins/fancybox.min.css">
         <link rel="stylesheet" href="assets/css/plugins/magnific-pupup.css">
 
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css">
+
+        <style>
+            .section-margin-bottom {
+                margin-block: 95px;
+            }
+
+            @media only screen and (min-width: 1200px) and (max-width: 1549px) {
+                .section-margin-bottom {
+                    margin-block: 75px;
+                }
+            }
+
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                .section-margin-bottom {
+                    margin-block: 55px;
+                }
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                .section-margin-bottom {
+                    margin-block: 40px;
+                }
+            }
+
+            @media only screen and (max-width: 767px) {
+                .section-margin-bottom {
+                    margin-block: 30px;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                .section-margin-bottom {
+                    margin-block: 30px;
+                }
+            }
+
+        </style>
     </head>
 
     <body>
@@ -38,7 +74,7 @@
                             <!-- Header Logo Start -->
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo.svg" alt="Company Logo">
+                                    <img src="assets/images/logo.svg" loading="lazy" alt="Company Logo">
                                 </a>
                             </div>
                             <!-- Header Logo End -->
@@ -49,7 +85,7 @@
                                     <nav class="main-menu">
                                         <ul>
                                             <li><a href="index.html">Home</a></li>
-                                            <li><a href="#about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
                                             <li><a href="#">Services</a></li>
                                             <li><a href="portfolio.html">Portfolio</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -81,24 +117,24 @@
         </header>
 
         <div class="offcanvas offcanvas-end" id="offcanvas-header">
-
             <div class="offcanvas-header">
                 <!-- Header Logo Start -->
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo.svg" alt="Company Logo">
+                        <img src="assets/images/logo.svg" loading="lazy" alt="Company Logo">
                     </a>
                 </div>
                 <!-- Header Logo End -->
                 <button type="button" class="btn-close text-reset mobilemenu-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
                        class="fas fa-times"></i></button>
             </div>
+
             <div class="offcanvas-body">
                 <!-- mobile menu navigation start -->
                 <nav>
                     <ul class="mobile-menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#about.html">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">CONTACT US </a></li>
@@ -106,33 +142,32 @@
                 </nav>
                 <!-- mobile menu navigation end -->
             </div>
-
         </div>
 
         <!-- Breadcrumb Section Start -->
-        <div class="section breadcrumb-section">
+        <div class="section breadcrumb-section" style="height: 100vh;">
             <span class="shape shape-one layer" data-speed="1">
-                <img src="assets/images/slider/shape-2.png" alt="Shape">
+                <img src="assets/images/slider/shape-2.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-two layer" data-speed="2">
-                <img src="assets/images/slider/shape-5.png" alt="Shape">
+                <img src="assets/images/slider/shape-5.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-three wow pulse" data-wow-duration="1s" data-wow-delay=".1s">
-                <img src="assets/images/slider/shape-7.png" alt="Shape">
+                <img src="assets/images/slider/shape-7.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-four wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                <img src="assets/images/slider/shape-9.png" alt="Shape">
+                <img src="assets/images/slider/shape-9.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-five wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">
-                <img src="assets/images/slider/shape-10.png" alt="Shape">
+                <img src="assets/images/slider/shape-10.png" loading="lazy" alt="Shape">
             </span>
             <div class="container">
                 <div class="row">
                     <div class="col-12 align-items-center text-center">
                         <!-- Breadcrumb Wrapper Start -->
                         <div class="breadcrumb-wrapper">
-                            <h1 class="title">Service</h1>
-                            <p class="text mb-0">Sed do eiusmod tempor incididunt ut labore et when the musis dolore magna aliqua.</p>
+                            <h1 class="title">Our Services</h1>
+                            <p class="text mb-0">We're providing a professional services which help you to improve and extend your work.</p>
                         </div>
                         <!-- Breadcrumb Wrapper End -->
                     </div>
@@ -144,129 +179,10 @@
         <!-- Service Section Start -->
         <div class="service-section section-padding">
             <div class="container">
-                <div class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 mb-n30">
-                    <div class="col mb-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                        <!-- Single Service Start -->
-                        <div class="single-service">
-                            <div class="single-service-top">
-                                <div class="icon">
-                                    <img src="assets/images/icons/icon-3.png" alt="icon">
-                                </div>
-                                <h4 class="title">
-                                    <a href="service-details.html">Digital Marketing</a>
-                                </h4>
-                            </div>
-                            <p class="single-service-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                            <a class="readmore-btn" href="service-details.html"><i class="fas fa-angle-right"></i> Read More</a>
-                        </div>
-                        <!-- Single Service End -->
-                    </div>
-                    <div class="col mb-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".3s">
-                        <!-- Single Service Start -->
-                        <div class="single-service">
-                            <div class="single-service-top">
-                                <div class="icon">
-                                    <img src="assets/images/icons/icon-4.png" alt="icon">
-                                </div>
-                                <h4 class="title">
-                                    <a href="service-details.html">Website Development</a>
-                                </h4>
-                            </div>
-                            <p class="single-service-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                            <a class="readmore-btn" href="service-details.html"><i class="fas fa-angle-right"></i> Read More</a>
-                        </div>
-                        <!-- Single Service End -->
-                    </div>
-                    <div class="col mb-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                        <!-- Single Service Start -->
-                        <div class="single-service">
-                            <div class="single-service-top">
-                                <div class="icon">
-                                    <img src="assets/images/icons/icon-5.png" alt="icon">
-                                </div>
-                                <h4 class="title">
-                                    <a href="service-details.html">Search Engine Optimization</a>
-                                </h4>
-                            </div>
-                            <p class="single-service-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                            <a class="readmore-btn" href="service-details.html"><i class="fas fa-angle-right"></i> Read More</a>
-                        </div>
-                        <!-- Single Service End -->
-                    </div>
-                    <div class="col mb-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".3s">
-                        <!-- Single Service Start -->
-                        <div class="single-service">
-                            <div class="single-service-top">
-                                <div class="icon">
-                                    <img src="assets/images/icons/icon-6.png" alt="icon">
-                                </div>
-                                <h4 class="title">
-                                    <a href="service-details.html">Cloud <br> Hosting</a>
-                                </h4>
-                            </div>
-                            <p class="single-service-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-                            <a class="readmore-btn" href="service-details.html"><i class="fas fa-angle-right"></i> Read More</a>
-                        </div>
-                        <!-- Single Service End -->
-                    </div>
-                </div>
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1 mb-n30" id="services"></div>
             </div>
         </div>
         <!-- Service Section End -->
-
-        <!-- Process Section Start -->
-        <div class="process-section section-padding">
-            <div class="container">
-                <div class="row mb-n30">
-                    <div class="col-lg-6 mb-30 wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
-                        <!-- Section Title Start -->
-                        <div class="section-head">
-                            <span class="subtitle">Process</span>
-                            <h2 class="title">How We Work to Bring the Best</h2>
-                            <p class="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco labor is tetur adipisicing elit, sed do eiusmod</p>
-                        </div>
-                        <!-- Section Title End  -->
-                    </div>
-                    <div class="col-lg-6 mb-30">
-                        <div class="row mb-n30">
-                            <div class="col-sm-6 mb-30 wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
-                                <div class="single-process">
-                                    <div class="number">1</div>
-                                    <h6 class="title">Website Development</h6>
-                                    <p class="text-two">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-30 wow fadeIn" data-wow-duration="1.2s" data-wow-delay=".1s">
-                                <div class="single-process">
-                                    <div class="number">2</div>
-                                    <h6 class="title">Website Development</h6>
-                                    <p class="text-two">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-30 wow fadeIn" data-wow-duration="1.4s" data-wow-delay=".1s">
-                                <div class="single-process">
-                                    <div class="number">3</div>
-                                    <h6 class="title">Website Development</h6>
-                                    <p class="text-two">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-30 wow fadeIn" data-wow-duration="1.6s" data-wow-delay=".1s">
-                                <div class="single-process">
-                                    <div class="number">4</div>
-                                    <h6 class="title">Website Development</h6>
-                                    <p class="text-two">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Process Section End -->
 
         <!-- Work Banner Start -->
         <div class="section-margin-bottom service-work wow fadeIn" data-wow-duration="1s" data-wow-delay=".1s">
@@ -293,25 +209,28 @@
         <!-- Footer Section start -->
         <footer class="footer-wrapper">
             <div class="shape-one">
-                <img src="assets/images/footer/shape-one.png" alt="Footer-Shape">
+                <img src="assets/images/footer/shape-one.png" loading="lazy" alt="Footer-Shape">
             </div>
             <div class="shape-two">
-                <img src="assets/images/footer/shape-two.png" alt="Footer-Shape">
+                <img src="assets/images/footer/shape-two.png" loading="lazy" alt="Footer-Shape">
             </div>
             <div class="container">
                 <div class="row mb-n30">
-
                     <!-- Footer Widget Start -->
                     <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-30 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
                         <div class="footer-widget negative-margin">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo.svg" alt="Company Logo">
+                                    <img src="assets/images/logo.svg" loading="lazy" alt="Company Logo">
                                 </a>
                             </div>
                             <ul class="footer-widget-list-icon">
-                                <li><i class="fas fa-map-marker-alt"></i> <span> Building 304 Industrial Area <br> - The 5th Settlement <br> New Cairo, Cairo,
-                                        Egypt</span></li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span> Building 304 Industrial Area <br> - The 5th Settlement <br> New Cairo, Cairo,
+                                        Egypt
+                                    </span>
+                                </li>
                                 <li><i class="fas fa-envelope"></i> <span><a href="mailto:info@spf-eg.com">info@spf-eg.com</a></span> </li>
                                 <li><i class="fas fa-phone"></i><span><a href="tel:+201065526665">0106 552 6665</a></span> </li>
                             </ul>
@@ -339,11 +258,11 @@
                         <div class="footer-widget">
                             <h5 class="footer-widget-title">Services</h5>
                             <ul class="footer-widget-list">
-                                <li><a href="service.html">Graphic Design</a></li>
-                                <li><a href="service.html">Campaign</a></li>
-                                <li><a href="service.html">Gandolla</a></li>
-                                <li><a href="service.html">Giveaways</a></li>
-                                <li><a href="service.html">Printings</a></li>
+                                <li><a href="#">Graphic Design</a></li>
+                                <li><a href="#">Campaign</a></li>
+                                <li><a href="#">Gandolla</a></li>
+                                <li><a href="#">Giveaways</a></li>
+                                <li><a href="#">Printings</a></li>
                             </ul>
                         </div>
                     </div>
@@ -356,7 +275,7 @@
                             <h5 class="footer-widget-title">Quick Links</h5>
                             <ul class="footer-widget-list">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="#about.html">About us</a></li>
+                                <li><a href="about.html">About us</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a href="portfolio.html">Portfolio</a></li>
                             </ul>

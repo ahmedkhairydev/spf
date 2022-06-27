@@ -20,11 +20,21 @@
         <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
         <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
         <link rel="stylesheet" href="assets/css/plugins/odometer-theme-default.min.css">
-        <link rel="stylesheet" href="assets/css/plugins/fancybox.min.css">
         <link rel="stylesheet" href="assets/css/plugins/magnific-pupup.css">
 
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/style.css">
+
+        <style>
+            .grid-item.odd {
+                height: 346px;
+            }
+
+            .grid-item.even {
+                height: 560px;
+            }
+
+        </style>
     </head>
 
     <body>
@@ -37,7 +47,7 @@
                             <!-- Header Logo Start -->
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo.svg" alt="Company Logo">
+                                    <img src="assets/images/logo.svg" loading="lazy" alt="Company Logo">
                                 </a>
                             </div>
                             <!-- Header Logo End -->
@@ -48,7 +58,7 @@
                                     <nav class="main-menu">
                                         <ul>
                                             <li><a href="index.html">Home</a></li>
-                                            <li><a href="#about.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
                                             <li><a href="service.html">Services</a></li>
                                             <li><a href="#">Portfolio</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -71,7 +81,7 @@
                                     </div>
 
                                 </div>
-                                <!-- Header Social Actions End -->
+                                <!-- Header Actions End -->
                             </div>
                         </div>
                     </div>
@@ -80,24 +90,25 @@
         </header>
 
         <div class="offcanvas offcanvas-end" id="offcanvas-header">
-
             <div class="offcanvas-header">
                 <!-- Header Logo Start -->
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo.svg" alt="Company Logo">
+                        <img src="assets/images/logo.svg" loading="lazy" alt="Company Logo">
                     </a>
                 </div>
                 <!-- Header Logo End -->
-                <button type="button" class="btn-close text-reset mobilemenu-close" data-bs-dismiss="offcanvas" aria-label="Close"><i
-                       class="fas fa-times"></i></button>
+                <button type="button" class="btn-close text-reset mobilemenu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
+
             <div class="offcanvas-body">
                 <!-- mobile menu navigation start -->
                 <nav>
                     <ul class="mobile-menu">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#about.html">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="service.html">Services</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="contact.html">CONTACT US</a></li>
@@ -105,33 +116,32 @@
                 </nav>
                 <!-- mobile menu navigation end -->
             </div>
-
         </div>
 
         <!-- Breadcrumb Section Start -->
-        <div class="section breadcrumb-section">
+        <div class="section breadcrumb-section" style="height: 100vh;">
             <span class="shape shape-one layer" data-speed="1">
-                <img src="assets/images/slider/shape-2.png" alt="Shape">
+                <img src="assets/images/slider/shape-2.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-two layer" data-speed="2">
-                <img src="assets/images/slider/shape-5.png" alt="Shape">
+                <img src="assets/images/slider/shape-5.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-three wow pulse" data-wow-duration="1s" data-wow-delay=".1s">
-                <img src="assets/images/slider/shape-7.png" alt="Shape">
+                <img src="assets/images/slider/shape-7.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-four wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                <img src="assets/images/slider/shape-9.png" alt="Shape">
+                <img src="assets/images/slider/shape-9.png" loading="lazy" alt="Shape">
             </span>
             <span class="shape shape-five wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".1s">
-                <img src="assets/images/slider/shape-10.png" alt="Shape">
+                <img src="assets/images/slider/shape-10.png" loading="lazy" alt="Shape">
             </span>
             <div class="container">
                 <div class="row">
                     <div class="col-12 align-items-center text-center">
                         <!-- Breadcrumb Wrapper Start -->
                         <div class="breadcrumb-wrapper">
-                            <h1 class="title">Portfolio Masonry</h1>
-                            <p class="text mb-0">Sed do eiusmod tempor incididunt ut labore et when the musis dolore magna aliqua.</p>
+                            <h1 class="title">Our Portfolio</h1>
+                            <p class="text mb-0">Our previous work leads us to improve our future work.</p>
                         </div>
                         <!-- Breadcrumb Wrapper End -->
                     </div>
@@ -141,182 +151,17 @@
         <!-- Breadcrumb Section End -->
 
         <!-- Portfolio Section Start -->
-        <div class="portfolio-one section-padding">
+        <div class="portfolio-one section-padding" id="portfolioWrapper">
             <div class="container">
                 <div class="portfolio-wrapper">
                     <!-- Portfolio Isotop Button Start -->
-                    <div class="portfolio-menu-style portfolio-menu-active isotope-btn-add-active mt-0 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                        <button class="active btn-portfolio" data-filter="*">All</button>
-                        <button class="btn-portfolio" data-filter=".cat1">Web Design</button>
-                        <button class="btn-portfolio" data-filter=".cat2">Development</button>
-                        <button class="btn-portfolio" data-filter=".cat3">Marketing</button>
-                        <button class="btn-portfolio" data-filter=".cat4">Photography</button>
+                    <div class="portfolio-menu-style portfolio-menu-active isotope-btn-add-active mt-0 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s"
+                         id="services">
+                        <button class="btn-portfolio" id="all" data-filter="*">All</button>
                     </div>
                     <!-- Portfolio Isotop Button End -->
-                    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n25 grid parent-gallery">
-                        <div class="col mb-25 grid-item cat2 cat4 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-1.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Web Design</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-1.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat1 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-2.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Web Design</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-2.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat4 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-3.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Photography</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-3.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat3 cat1 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-4.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Marketing</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-4.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat4 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-6.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Photography</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-6.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat1 cat3 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-5.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Development</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-5.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat3 cat1 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-1.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Web Design</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-1.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat4 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-2.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Web Design</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-2.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                        <div class="col mb-25 grid-item cat1 cat3 wow fadeIn" data-wow-duration="1.5s" data-wow-delay=".1s">
-                            <!-- Single Portfolio Start -->
-                            <div class="single-portfolio">
-                                <a class="thumbnail" href="portfolio-details.html">
-                                    <img src="assets/images/portfolio/portfolio-3.png" alt="Blog Image">
-                                </a>
-                                <div class="content">
-                                    <span class="subtitle">Photography</span>
-                                    <h3 class="title">
-                                        <a href="portfolio-details.html">When the musics over turn off the light</a>
-                                    </h3>
-                                </div>
-                                <div class="lightbox">
-                                    <a class="item" href="assets/images/portfolio/portfolio-3.png"><i class="fas fa-external-link-alt"></i></a>
-                                </div>
-                            </div>
-                            <!-- Single Portfolio End -->
-                        </div>
-                    </div>
+
+                    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n25 grid parent-gallery" id="portfolio"></div>
                 </div>
             </div>
         </div>
@@ -325,10 +170,10 @@
         <!-- Footer Section start -->
         <footer class="footer-wrapper">
             <div class="shape-one">
-                <img src="assets/images/footer/shape-one.png" alt="Footer-Shape">
+                <img src="assets/images/footer/shape-one.png" loading="lazy" alt="Footer-Shape">
             </div>
             <div class="shape-two">
-                <img src="assets/images/footer/shape-two.png" alt="Footer-Shape">
+                <img src="assets/images/footer/shape-two.png" loading="lazy" alt="Footer-Shape">
             </div>
             <div class="container">
                 <div class="row mb-n30">
@@ -338,7 +183,7 @@
                         <div class="footer-widget negative-margin">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo.svg" alt="Company Logo">
+                                    <img src="assets/images/logo.svg" loading="lazy" alt="Company Logo">
                                 </a>
                             </div>
                             <ul class="footer-widget-list-icon">
@@ -388,7 +233,7 @@
                             <h5 class="footer-widget-title">Quick Links</h5>
                             <ul class="footer-widget-list">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="#about.html">About us</a></li>
+                                <li><a href="about.html">About us</a></li>
                                 <li><a href="service.html">Services</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                             </ul>
