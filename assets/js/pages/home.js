@@ -241,13 +241,13 @@
       type: 'odd'
     },
     {
-      imageName: 'gate_4.jpg',
+      imageName: 'gate_2.jpg',
       serviceCat: 'gate',
       type: 'odd'
     },
     {
-      imageName: 'booth_1.png',
-      serviceCat: 'booth',
+      imageName: 'counter-top_7.png',
+      serviceCat: 'counter-top',
       type: 'odd'
     },
   ];

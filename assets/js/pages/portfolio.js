@@ -9,13 +9,13 @@
 
     const portfolioImages = [
         {
-            imageName: 'gate_1.jpg',
-            serviceCat: 'gate',
+            imageName: 'magazine_1.jpg',
+            serviceCat: 'magazine',
             type: 'odd'
         },
         {
-            imageName: 'floor-stand_2.jpg',
-            serviceCat: 'floor-stand',
+            imageName: 'roll-up_1.jpg',
+            serviceCat: 'roll-up',
             type: 'even'
         },
         {
@@ -96,11 +96,27 @@
             type: 'even'
         },
         {
-            imageName: 'floor-display_4.jpg',
-            serviceCat: 'floor-display',
+            imageName: 'booth_1.jpg',
+            serviceCat: 'booth',
             type: 'odd'
         },
         // 3
+        {
+            imageName: 'magazine_2.jpg',
+            serviceCat: 'magazine',
+            type: 'even'
+        },
+        {
+            imageName: 'roll-up_5.jpg',
+            serviceCat: 'roll-up',
+            type: 'even'
+        },
+        {
+            imageName: 'magazine_3.jpg',
+            serviceCat: 'magazine',
+            type: 'even'
+        },
+        // 4
         {
             imageName: 'dangler_3.png',
             serviceCat: 'dangler',
@@ -131,9 +147,9 @@
             serviceCat: 'dangler',
             type: 'odd'
         },
-        // 4
+        // 5
         {
-            imageName: 'gate_4.jpg',
+            imageName: 'gate_2.jpg',
             serviceCat: 'gate',
             type: 'odd'
         },
@@ -162,7 +178,7 @@
             serviceCat: 'giveaways',
             type: 'odd'
         },
-        // 5
+        // 6
         {
             imageName: 'dangler_6.jpg',
             serviceCat: 'dangler',
@@ -179,7 +195,7 @@
             type: 'odd'
         },
         {
-            imageName: 'floor-display_9.jpg',
+            imageName: 'floor-display_4.jpg',
             serviceCat: 'floor-display',
             type: 'even'
         },
@@ -189,11 +205,90 @@
             type: 'even'
         },
         {
-            imageName: 'booth_1.png',
-            serviceCat: 'booth',
+            imageName: 'counter-top_7.png',
+            serviceCat: 'counter-top',
             type: 'odd'
         },
-        // 6
+        // 7
+        {
+            imageName: 'dangler_8.png',
+            serviceCat: 'dangler',
+            type: 'odd'
+        },
+        {
+            imageName: 'gandolla_2.jpg',
+            serviceCat: 'gandolla',
+            type: 'even'
+        },
+        {
+            imageName: 'giveaways_3.png',
+            serviceCat: 'giveaways',
+            type: 'odd'
+        },
+        {
+            imageName: 'pillar_1.jpg',
+            serviceCat: 'pillar',
+            type: 'even'
+        },
+        {
+            imageName: 'pillar_2.jpg',
+            serviceCat: 'pillar',
+            type: 'even'
+        },
+        {
+            imageName: 'counter-top_1.jpg',
+            serviceCat: 'counter-top',
+            type: 'odd'
+        },
+        // 8
+        {
+            imageName: 'counter-top_3.jpg',
+            serviceCat: 'counter-top',
+            type: 'odd'
+        },
+        {
+            imageName: 'counter-top_4.jpg',
+            serviceCat: 'counter-top',
+            type: 'odd'
+        },
+        {
+            imageName: 'counter-top_5.jpg',
+            serviceCat: 'counter-top',
+            type: 'odd'
+        },
+        // 9
+        {
+            imageName: 'counter-top_6.jpg',
+            serviceCat: 'counter-top',
+            type: 'odd'
+        },
+        {
+            imageName: 'roll-up_2.jpg',
+            serviceCat: 'roll-up',
+            type: 'even'
+        },
+        {
+            imageName: 'gate_1.jpg',
+            serviceCat: 'gate',
+            type: 'odd'
+        },
+        {
+            imageName: 'roll-up_3.jpg',
+            serviceCat: 'roll-up',
+            type: 'even'
+        },
+        {
+            imageName: 'roll-up_4.jpg',
+            serviceCat: 'roll-up',
+            type: 'even'
+        },
+        {
+            imageName: 'giveaways-4.jpg',
+            serviceCat: 'giveaways',
+            type: 'odd'
+        },
+        // 10
+
     ];
 
     const newServices = [...new Set(portfolioImages.map(portfolioImage => portfolioImage.serviceCat).sort())];
@@ -209,7 +304,7 @@
                 <!-- Single Portfolio Start -->
                 <div class="single-portfolio">
                     <a class="thumbnail" href="javascript:">
-                        <img src="assets/images/products/${portfolioImage.imageName}" loading="lazy" alt="Blog Image">
+                        <img src="assets/images/products/${portfolioImage.imageName}" loading="lazy" alt="Portfolio Image - ${portfolioImage.imageName}">
                     </a>
                     <div class="content">
                         <span class="subtitle text-capitalize">${portfolioImage.serviceCat.split('-').join(' ')}</span>
