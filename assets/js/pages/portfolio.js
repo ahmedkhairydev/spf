@@ -289,6 +289,22 @@
         },
         // 10
 
+        {
+            imageName: 'booth_2.jpg',
+            serviceCat: 'booth',
+            type: 'odd'
+        },
+        {
+            imageName: 'booth_3.jpg',
+            serviceCat: 'booth',
+            type: 'even'
+        },
+        {
+            imageName: 'booth_4.jpg',
+            serviceCat: 'booth',
+            type: 'odd'
+        },
+        // 11
     ];
 
     const newServices = [...new Set(portfolioImages.map(portfolioImage => portfolioImage.serviceCat).sort())];

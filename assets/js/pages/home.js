@@ -4,7 +4,7 @@
   /*---------------------------
       Hero Slider Activation
     -----------------------------------*/
-  var swiper = new Swiper(".sliderone", {
+  const sliderOne = new Swiper(".sliderone", {
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,
@@ -74,6 +74,7 @@
       }
     });
   });
+
   $('.isotope-btn-add-active button').on('click', function (event) {
     $(this).siblings('.active').removeClass('active');
     $(this).addClass('active');
@@ -83,7 +84,7 @@
   /*---------------------------
     Testimonial Activation
   -----------------------------------*/
-  var swiper = new Swiper(".testimonialone", {
+  const testimonialOne = new Swiper(".testimonialone", {
     slidesPerView: 1,
     spaceBetween: 30,
     centeredSlides: true,
@@ -99,7 +100,7 @@
   /*---------------------------
     Testimonial Two Activation
   -----------------------------------*/
-  var swiper = new Swiper(".testimonialtwo", {
+  const testimonialTwo = new Swiper(".testimonialtwo", {
     slidesPerView: 3,
     loop: true,
     pagination: false,
@@ -131,11 +132,10 @@
   /*---------------------------
     Brand Slider Activation
   -----------------------------------*/
-  var swiper = new Swiper(".brand-slider-two", {
+  const brandTwo = new Swiper(".brand-slider-two", {
     loop: true,
     speed: 800,
     autoplay: true,
-    slidesPerView: 5,
     spaceBetween: 0,
     pagination: false,
     navigation: false,
@@ -150,15 +150,15 @@
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 60,
+        spaceBetween: 40,
       },
       992: {
         slidesPerView: 4,
-        spaceBetween: 70,
+        spaceBetween: 40,
       },
       1200: {
-        slidesPerView: 5,
-        spaceBetween: 80,
+        slidesPerView: 4,
+        spaceBetween: 40,
       }
     }
   });
@@ -166,7 +166,7 @@
   /*---------------------------
     Portfolio Carousel Activation
   -----------------------------------*/
-  var swiper = new Swiper(".portfolio-carousel", {
+  const portfolio = new Swiper(".portfolio-carousel", {
     loop: false,
     slidesPerView: 3,
     spaceBetween: 20,
@@ -215,6 +215,23 @@
   });
 
   $('#services').append(servicesHTML);
+
+  /*---------------------------
+    Brands
+  -----------------------------------*/
+  const brands = ['Johnson&Johnson', 'loreoal-paris', 'bosch', 'danone', 'seb', 'gsk', 'LG', 'sanofi', 'aldora', 'health', 'heinz', 'savola'];
+  let brandsHTML = '';
+
+  brands.forEach(brand => {
+    brandsHTML += `
+      <div class="swiper-slide">
+        <a class="brand-after" href="javascript:"><img src="assets/images/brand/${brand}.svg" loading="lazy" alt="${brand} Brand-Image"></a>
+        <a class="brand-before" href="javascript:"><img src="assets/images/brand/${brand}.svg" loading="lazy" alt="${brand} Brand-Image"></a>
+      </div>
+    `;
+  });
+
+  $('#brandsTwo').append(brandsHTML);
 
   /*---------------------------
     Portfolio

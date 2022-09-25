@@ -4,7 +4,7 @@
   /*---------------------------
     Services
   -----------------------------------*/
-  const services = ['booth', 'campaign', 'category', 'counter-top', 'floor-display', 'floor-stand', 'gandolla', 'gate', 'giveaways', 'magazine', 'pillar', 'printings', 'shelf'];
+  const services = ['booth', 'campaign', 'category', 'counter-top', 'floor-display', 'floor-stand', 'gandolla', 'gate', 'giveaways', 'magazine', 'pillar', 'printings', 'shelf', 'dangler', 'window-display'];
   let servicesHTML = '';
 
 
