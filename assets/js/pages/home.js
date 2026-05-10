@@ -219,7 +219,7 @@
   /*---------------------------
     Brands
   -----------------------------------*/
-  const brands = ['Johnson&Johnson', 'loreoal-paris', 'bosch', 'danone', 'seb', 'gsk', 'LG', 'sanofi', 'aldora', 'health', 'heinz', 'savola'];
+  const brands = ['Johnson&Johnson', 'loreoal-paris', 'bosch', 'Danone', 'seb', 'GSK', 'LG', 'sanofi', 'aldora', 'health', 'heinz', 'savola'];
   let brandsHTML = '';
 
   brands.forEach(brand => {
